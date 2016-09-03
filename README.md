@@ -9,6 +9,7 @@ Dataset generation and machine learning analysis of the IBTrACS-WMO tropical sto
   ```
   conda install netCDF4
   conda install gdal
+  conda install pandoc
   conda install -c conda-forge ipyleaflet
   pip install liac-arff
   ```
