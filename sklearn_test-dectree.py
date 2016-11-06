@@ -114,7 +114,7 @@ print("average_precision_score: %f" % metrics.average_precision_score(y_test_tru
 print("f1_score: %f" % metrics.f1_score(y_test_truth, y_test_pred))
 print("recall_score: %f" % metrics.recall_score(y_test_truth, y_test_pred))
 print("roc_auc_score: %f" % metrics.roc_auc_score(y_test_truth, y_test_pred))
-print("classification_report:\n%s" % metrics.classification_report(y_test_truth, y_test_pred))
+print("classification_report:\n%s" % metrics.classification_report(y_test_truth, y_test_pred, target_names=CLASS_LABELS))
 
 # print tree
 dot_data = tree.export_graphviz(clf, out_file=None,
